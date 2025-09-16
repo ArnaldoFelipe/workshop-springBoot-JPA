@@ -2,9 +2,20 @@ package com.project.entities;
 
 import java.io.Serializable;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 // criando a entidade user 
+@Entity
+@Table(name = "tb_user")
 public class User implements Serializable{
     
+    // anotando o meu atributo id como uma chave de identificacao no meu db, e fazendo com que ele seja auto incrementado
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
     private String email;
