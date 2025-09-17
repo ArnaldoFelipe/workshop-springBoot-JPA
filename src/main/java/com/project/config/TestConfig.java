@@ -15,9 +15,11 @@ import com.project.repositories.UserRepository;
 @Profile("test")
 public class TestConfig implements CommandLineRunner {
     
+    // injeçao de dependencia
     @Autowired
     private UserRepository userRepository;
 
+    // metodo para ser executado toda vez que rodar a aplicaçao
     @Override
     public void run(String... args) throws Exception {
         User u1 = new User(null, "Maria Brown", "maria@gmail.com", "988888888", "123456"); 
