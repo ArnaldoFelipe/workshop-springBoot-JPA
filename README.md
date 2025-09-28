@@ -25,7 +25,7 @@ Order (Pedido)	O objeto transacional principal, representando a compra de um cli
 OrderItem (Item de Pedido)	Detalhes de quais produtos e em que quantidade foram comprados em um Order.
 Payment (Pagamento)	Informações sobre a transação financeira relacionada ao Order.
 
-Exportar para as Planilhas
+
 🛠️ Como Executar o Projeto
 Para rodar o projeto localmente, siga os passos abaixo:
 
@@ -65,7 +65,6 @@ Buscar Pedido	GET	/orders/{id}	Retorna um pedido específico.
 Criar Usuário	POST	/users	Envia um novo usuário para o sistema.
 Deletar Produto	DELETE	/products/{id}	Remove um produto do catálogo.
 
-Exportar para as Planilhas
 💡 Próximos Passos e Melhorias
 Migrar do H2 em memória para um banco de dados persistente (PostgreSQL, MySQL).
 
